@@ -1,0 +1,107 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="LifeDataAnalysis"
+	id="LifeDataAnalysis_rkward"
+	po_id="LifeDataAnalysis_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.weibull"
+		shortinfo="An RKWard plugin for Life Data Analysis and Warranty Prediction using the 'WeibullR' package."
+		longinfo="An RKWard plugin for Life Data Analysis and Warranty Prediction using the 'WeibullR' package."
+		version="0.0.1"
+		releasedate="2025-12-24"
+		url="https://github.com/AlfCano/rk.weibull"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_LifeDatAnlyssWrrntyPrdctn"
+			label="Warranty Prediction"
+			type="standard"
+			file="plugins/WarrantyPrediction.xml"
+		>
+		</component>
+		<component
+			id="cmp_LifeDataAnalyssLfDtAnlyss"
+			label="Life Data Analysis"
+			type="standard"
+			file="plugins/LifeDataAnalysis.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="IndustrialStats"
+				label="Industrial Stats"
+			>
+				<menu
+					id="Reliability"
+					label="Reliability"
+				>
+					<entry
+						component="cmp_LifeDatAnlyssWrrntyPrdctn"
+					/>
+				</menu>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="IndustrialStats"
+				label="Industrial Stats"
+			>
+				<menu
+					id="Reliability"
+					label="Reliability"
+				>
+					<entry
+						component="cmp_LifeDataAnalyssLfDtAnlyss"
+					/>
+				</menu>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>

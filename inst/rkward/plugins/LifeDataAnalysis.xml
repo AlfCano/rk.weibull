@@ -1,0 +1,40 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="LifeDataAnalysis.js" />
+	<help file="LifeDataAnalysis.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Life Data Analysis">
+		<row id="row_vTFSES1F0S">
+			<varselector id="lda_selector" />
+			<column id="clm_vTFSES1F0S">
+				<varslot id="lda_time" label="Time to Failure / Suspension" source="lda_selector" required="true" />
+				<varslot id="lda_event" label="Event Status (1=Fail, 0=Suspension)" source="lda_selector" required="true" />
+				<frame label="Analysis Settings" id="frm_AnlyssSt">
+					<dropdown id="lda_method" label="Analysis Method">
+						<option label="Rank Regression (RR)" value="rr" checked="true" />
+						<option label="Maximum Likelihood (MLE)" value="mle" />
+					</dropdown>
+					<spinbox label="Confidence Level (0-1)" id="lda_conf" initial="0.95" min="0.5" max="0.99" />
+					<checkbox id="lda_plot_type" label="Show Confidence Bounds on Plot" value="1" checked="true" />
+				</frame>
+				<saveobject label="Save Weibull Object" checkable="true" checked="true" initial="wblr_obj" id="lda_save" />
+				<preview label="Preview" id="prv_Preview" />
+			</column>
+		</row>
+	</dialog>
+</document>

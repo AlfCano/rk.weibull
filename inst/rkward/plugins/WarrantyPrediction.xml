@@ -1,0 +1,31 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="WarrantyPrediction.js" />
+	<help file="WarrantyPrediction.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Warranty Prediction">
+		<row id="row_vFWOPF01B1">
+			<varselector id="war_selector" />
+			<column id="clm_vFWOPF01B1">
+				<varslot id="war_obj" label="Fitted Weibull Object" source="war_selector" classes="wblr" required="true" />
+				<input label="Probability of Failure (e.g. 0.1 for B10)" id="war_prob" initial="0.1" />
+				<stretch />
+			</column>
+		</row>
+	</dialog>
+</document>
