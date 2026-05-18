@@ -15,7 +15,7 @@ local({
     ),
     about = list(
       desc = "An RKWard plugin for Life Data Analysis and Warranty Prediction using the 'WeibullR' package.",
-      version = "0.0.1",
+      version = "0.0.2",
       url = "https://github.com/AlfCano/rk.weibull",
       license = "GPL (>= 3)"
     )

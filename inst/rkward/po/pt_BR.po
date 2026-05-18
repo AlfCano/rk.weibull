@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.weibull 0.0.1\n"
+"Report-Msgid-Bugs-To: alfonso.cano@correo.buap.mx\n"
+"POT-Creation-Date: 2026-03-23 12:08-0600\n"
+"PO-Revision-Date: 2026-03-23 12:08-0600\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Industrial Stats"
+msgstr "Estatísticas Industriais"
+
+msgid "Reliability"
+msgstr "Confiabilidade"
+
+msgid "Life Data Analysis (Weibull)"
+msgstr "Análise de Dados de Vida (Weibull)"
+
+msgid "Fit a 2-parameter Weibull distribution to life data (time-to-failure) and generate probability plots."
+msgstr "Ajusta uma distribuição Weibull de 2 parâmetros a dados de vida (tempo até a falha) e gera gráficos de probabilidade."
+
+msgid "Select the Time variable and the Event/Censor variable (1=Failure, 0=Suspension). Choose the fitting method (RR or MLE)."
+msgstr "Selecione a variável de Tempo e a variável de Evento/Censura (1=Falha, 0=Suspensão). Escolha o método de ajuste (RR ou MLE)."
+
+msgid "Time to Failure / Suspension"
+msgstr "Tempo até a Falha / Suspensão"
+
+msgid "Event Status (1=Fail, 0=Suspension)"
+msgstr "Status do Evento (1=Falha, 0=Suspensão)"
+
+msgid "Analysis Method"
+msgstr "Método de Análise"
+
+msgid "Rank Regression (RR)"
+msgstr "Regressão de Postos (RR)"
+
+msgid "Maximum Likelihood (MLE)"
+msgstr "Máxima Verossimilhança (MLE)"
+
+msgid "Confidence Level (0-1)"
+msgstr "Nível de Confiança (0-1)"
+
+msgid "Show Confidence Bounds on Plot"
+msgstr "Mostrar Limites de Confiança no Gráfico"
+
+msgid "Save Weibull Object"
+msgstr "Salvar Objeto Weibull"
+
+msgid "Analysis Settings"
+msgstr "Configurações de Análise"
+
+msgid "Life Data Analysis" 
+msgstr "Análise de Dados de Vida"
+
+msgid "Warranty Prediction (B-Life)"
+msgstr "Previsão de Garantia (Vida B)"
+
+msgid "Calculate B-Life metrics (e.g., B10 life) based on a previously fitted Weibull object."
+msgstr "Calcula métricas de Vida B (ex. vida B10) com base em um objeto Weibull previamente ajustado."
+
+msgid "Select a saved 'wblr' object from the Life Data Analysis step. Specify the probability of failure (Unreliability)."
+msgstr "Selecione um objeto 'wblr' salvo da etapa de Análise de Dados de Vida. Especifique a probabilidade de falha (Não confiabilidade)."
+
+msgid "Fitted Weibull Object"
+msgstr "Objeto Weibull Ajustado"
+
+msgid "Probability of Failure (e.g. 0.1 for B10)"
+msgstr "Probabilidade de Falha (ex. 0.1 para B10)"
+
+msgid "Warranty Prediction"
+msgstr "Previsão de Garantia"

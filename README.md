@@ -1,8 +1,11 @@
 # rk.weibull: Reliability & Life Data Analysis for RKWard
 
-![Version](https://img.shields.io/badge/Version-0.0.1-orange)
-![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
-![AI Assistance](https://img.shields.io/badge/Created%20with-Gemini-4E86F8)
+![Version](https://img.shields.io/badge/Version-0.0.2-blue.svg)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![RKWard](https://img.shields.io/badge/Platform-RKWard-green)
+[![R Linter](https://github.com/AlfCano/rk.weibull/actions/workflows/lintr.yml/badge.svg)](https://github.com/AlfCano/rk.weibull/actions/workflows/lintr.yml)
+![AI Gemini](https://img.shields.io/badge/AI-Gemini-4285F4?logo=googlegemini&logoColor=white)
+
 
 **rk.weibull** is an external plug-in for [RKWard](https://rkward.kde.org/) that brings industrial-grade Reliability Engineering tools to the RKWard environment. It interfaces with the open-source **`WeibullR`** package to perform Life Data Analysis (Weibull Analysis) and Warranty Prediction, serving as a free alternative to software like ReliaSoft Weibull++ or Minitab's Reliability module.
 
@@ -15,6 +18,16 @@
     *   **Maximum Likelihood Estimation (MLE):** Recommended for larger datasets ($N > 30$). Automatically applies Fisher Matrix confidence bounds.
     *   **Rank Regression (RR):** Standard Least Squares method ($X$ on $Y$ or $Y$ on $X$); automatically applies Pivotal confidence bounds.
 *   **Visualization:** Generates standard Weibull Probability Plots (Weibull Canvas) with 95% confidence intervals.
+
+## 🌍 Internationalization
+
+The interface is fully localized to match your RKWard language settings:
+
+*   🇺🇸 **English** (Default)
+*   🇪🇸 **Spanish** (`es`)
+*   🇫🇷 **French** (`fr`)
+*   🇩🇪 **German** (`de`)
+*   🇧🇷 **Portuguese** (Brazil) (`pt_BR`)
 
 ### 2. Warranty Prediction (B-Life)
 *   **B-Life Calculation:** Calculates the time by which a specific percentage of units will fail (e.g., $B_{10}$ Life).
